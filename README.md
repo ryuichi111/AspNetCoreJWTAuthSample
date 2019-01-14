@@ -3,6 +3,7 @@ ASP.NET Core 2.2 WebAPI / JWT を使ったWebAPIのサンプル。
 
 * AccessTokenの有効期限は60秒（テスト用に短く src/CoreWebApiWithJWT/appsettings.json）  
 * RefreshTokenでAccessTokenRefreshToken更新に対応  
+* JWT(https://github.com/jwt-dotnet/jwt)  
 
 ## 環境  
 
