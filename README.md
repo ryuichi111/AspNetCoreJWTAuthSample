@@ -13,6 +13,7 @@ ASP.NET Core 2.2 WebAPI / JWT を使ったWebAPIのサンプル。
 POST https://localhost:44341/api/token
 { "Email": "daigo@testtest.jp",  "Password": "P@ssword" }
 ```
+![image](https://user-images.githubusercontent.com/1695858/51103017-8e7da900-1824-11e9-929a-1e672226d89e.png)
 
 2. 以下でトークンによる認証を行いAccessToken / RefreshTokenを取得します。  
 ```
