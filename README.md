@@ -1,7 +1,13 @@
 # ASP.NET Core 2.2 / JWT Example
 ASP.NET Core 2.2 WebAPI / JWT を使ったWebAPIのサンプル。  
 
-  
+## 環境  
+
+* Visual Studio 2019 Preview  
+* ASP.NET Core 2.2  
+* JWT 5.0.0-beta4  
+
+## 動作  
 1. 以下で認証を行いAccessToken / RefreshTokenを取得します。  
 ```
 POST https://localhost:44341/api/token
