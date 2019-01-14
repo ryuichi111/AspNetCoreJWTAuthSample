@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,7 +14,9 @@ namespace CoreWebApiWithJWT.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "value1", "value2" };
+            var email = this.HttpContext.User.Claims.Where(c => c.Type == System.Security.Claims.ClaimTypes.Email).FirstOrDefault().Value;
+            var nickname = this.HttpContext.User.Claims.Where(c => c.Type == "nickname").FirstOrDefault().Value;
+            return new string[] { email, nickname };
         }
 
         // GET api/values/5
